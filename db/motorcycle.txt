@@ -1,0 +1,1 @@
+[{"placa":"MAC323","brand":"Yamaha-XT660","displacement":659,"color":"Black-white","model":2023,"id":"30a5cdd6-16d9-43c1-83d3-e79c09c8cfc8"},{"placa":"MAD663","brand":"Yamaha-XT660","displacement":600,"color":"Black-white","model":2023,"id":"28d8e8a7-80fa-4956-baaf-7e3b2e5fca64"}]
