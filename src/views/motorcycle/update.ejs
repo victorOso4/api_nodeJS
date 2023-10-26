@@ -1,0 +1,51 @@
+<%- include('../layouts/header', {title: 'Create a new motorcycle'}); -%>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <h1 class="alert alert-success text-center">Create a new Motorcycle</h1>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12">
+                <form action="/motorcycle/update/" method="post" class="row">
+                    <div class="col-6">
+                        <label for="placa" class="form-label">Placa</label>
+                        <input type="text" name="placa" id="placa" class="form-control" value="<%= motorcycle.placa%>">
+                    </div>
+                    <div class="col-6">
+                        <label for="brand" class="form-label">Brand</label>
+                        <input type="text" name="brand" id="brand" class="form-control" value="<%= motorcycle.brand%>"required>
+                    </div>
+                    <div class="col-6">
+                        <label for="displacement" class="form-label">Displacement</label>
+                        <select name="displacement" id="displacement" class="form-select" required>
+                            <option value="<%= motorcycle.displacement%>" disabled selected>Selecciona una opción</option>
+                            <option value=200>Hight 🏍️</option>
+                            <option value=110>Low 🛵</option>
+                        </select>
+                    </div>
+                    <div class="col-6">
+                        <label for="color" class="form-label">Color</label>
+                        <input type="text" name="color" id="color" class="form-control" value="<%= motorcycle.color%>"required>
+                    </div>
+                    <div class="col-6">
+                        <label for="model" class="form-label">model</label>
+                        <input type="number" name="model" id="model" class="form-control" value="<%= motorcycle.model%>" required>
+                    </div>
+                    <div class="col-12 d-grid mt-4">
+                        <button type="submit" class="btn btn-outline-success">Edit</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12 d-grid mt-4">
+                <a href="/motorcycle" class="btn btn-outline-secondary">
+                    Back to motorcycles list
+                </a>
+            </div>
+        </div>
+    </div>
+
+<%- include('../layouts/footer'); -%>
